@@ -60,6 +60,8 @@ GEM
     concurrent-ruby (1.0.5)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
     ffi (1.9.18)
     foreman (0.84.0)
       thor (~> 0.19.1)
@@ -205,6 +207,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails
+  faker
   foreman
   guard
   guard-minitest

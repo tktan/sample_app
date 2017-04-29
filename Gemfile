@@ -32,6 +32,7 @@ gem 'jbuilder'
 # gem 'redis'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
+gem 'faker'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
