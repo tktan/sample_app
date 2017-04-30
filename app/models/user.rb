@@ -42,6 +42,11 @@ class User < ApplicationRecord
     update_attribute(:remember_digest, nil)
   end
 
+  # Activates an account.
+  def activate
+    update_attributes(activated: true, activated_at: Time.zone.now)
+  end
+
   private
   # Creates and assigns the activation token and digest.
   def create_activation_digest
