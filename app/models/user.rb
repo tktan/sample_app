@@ -84,6 +84,11 @@ class User < ApplicationRecord
     following << other_user
   end
 
+  # Unfollows a user.
+  def unfollow(other_user)
+    following.delete(other_user)
+  end
+
   private
   # Creates and assigns the activation token and digest.
   def create_activation_digest
