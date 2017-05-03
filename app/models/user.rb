@@ -79,6 +79,11 @@ class User < ApplicationRecord
     Micropost.where("user_id = ?", id)
   end
 
+  # Follows a user.
+  def follow(other_user)
+    following << other_user
+  end
+
   private
   # Creates and assigns the activation token and digest.
   def create_activation_digest
